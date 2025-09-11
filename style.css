@@ -36,6 +36,7 @@ button{
     cursor: pointer;
     background-color: transparent;
     font-family: var(--font);
+    color: var(--black);
     transition-property: background-color, color;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .5s;
@@ -290,6 +291,8 @@ body{
     }
 
     .changePanelBox{display: none}
+
+    .centerAboutBox img{max-width: 100%}
     
     #aboutBox, .elementCareersGrid{grid-template-columns: 1fr}
 }
