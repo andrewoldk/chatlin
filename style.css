@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --black: #000;
+    --border-dark: #dadada;
+    --white: #fff;
+    --footer-text: #dadada;
+    --selection: #b9b9b9;
+    --font: "Work Sans", "Inter", "Roboto", "Arial", sans-serif;
+}
+
+::selection{
+    background-color: var(--selection);
+}
+
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    font-family: var(--font);
+    transition-property: background-color, color;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
+    animation-duration: .5s;
+    border: .1px solid var(--black);
+}
+
+button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    overscroll-behavior: none;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--font);
+}
+
+#body{
+    padding: 15px;
+}
+
+/* HEADER */
+#header{
+    padding: 15px 20px;
+    position: fixed;
+    max-width: 1260px;
+    left: 40px;
+    right: 40px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    border-radius: 32px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 40px 25px #0000000d, 0 5px 10px #0000001a;
+}
+
+#header a{
+    color: var(--black);
+    font-family: var(--font);
+    padding: 10px;
+    font-size: 20.5px;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+    animation-duration: .3s;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+#header a:hover{
+    background-color: #ebebeb7b;
+}
+
+.logoBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20.5px;
+    font-optical-sizing: auto;
+    line-height: 1;
+}
+
+.logotypeImg{width: 3rem}
+
+.changePanelBox{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 3px;
+}
+
+/* MAIN */
+#main{
+    margin-top: 120px;
+}
+
+/* about */
+#aboutBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto 40px auto;
+    max-width: 1260px;
+    align-items: stretch;
+}
+
+.leftAboutBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerAboutBox{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.centerAboutBox img{
+    max-height: 600px;
+    border-radius: 35px;
+    box-shadow: 0 40px 25px #0000000d, 0 5px 10px #0000008b;
+}
+
+.infoSectionAbountBox h2{
+    font-size: 28px;
+}
+
+.infoSectionAbountBox p{
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.aboutBoxStyle{
+    padding: 25px;
+    border-radius: 35px;
+    outline: .1px solid var(--border-dark);
+}
+
+.aboutBoxStyle p{
+    margin-top: 10px;
+}
+
+.infoSectionAbountBox {
+    height: 100%;
+}
+
+.rightAboutBox {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    border-radius: 42px;
+    outline: .1px solid var(--border-dark);
+    gap: 10px;
+}
+
+.advantageSectionAboutBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* download */
+#downloadBox{
+    margin: 0 auto;
+    max-width: 1260px;
+    border: .1px solid var(--border-dark);
+    border-radius: 32px;
+    padding: 20px 0;
+}
+
+.downloadBoxElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadBoxElement h1{
+    font-size: 48px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.downloadBoxElement button{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    border-radius: 32px;
+}
+
+/* careers */
+.careersBoxElement{
+    margin: 40px auto 0 auto;
+    max-width: 1260px;
+    border: .1px solid var(--border-dark);
+    border-radius: 32px;
+}
+
+.careersBoxElement h1{
+    text-align: center;
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.careersBoxElement p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.elementCareersGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.elementCareers{
+    border: .1px solid var(--border-dark);
+    border-radius: 22px;
+    text-align: center;
+    padding: 15px;
+}
+
+.elementCareers button{
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.elementCareers h3{
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+/* FOOTER */
+#footer{
+    text-align: center;
+    padding: 30px 0 15px 0;
+    color: var(--footer-text);
+    font-family: monospace;
+}
+
+#footer a{
+    color: var(--footer-text);
+    text-decoration: underline;
+}
+
+/* ADAPTATION */
+@media (max-width: 720px) {
+    #header{
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 16px;
+        right: 16px;
+    }
+
+    .changePanelBox{display: none}
+    
+    #aboutBox, .elementCareersGrid{grid-template-columns: 1fr}
+}
