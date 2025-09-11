@@ -164,7 +164,7 @@ body{
 .aboutBoxStyle{
     padding: 25px;
     border-radius: 35px;
-    outline: .1px solid var(--border-dark);
+    border: .1px solid var(--border-dark);
 }
 
 .aboutBoxStyle p{
@@ -180,7 +180,7 @@ body{
     grid-template-rows: repeat(3, 1fr);
     padding: 10px;
     border-radius: 42px;
-    outline: .1px solid var(--border-dark);
+    border: .1px solid var(--border-dark);
     gap: 10px;
 }
 
